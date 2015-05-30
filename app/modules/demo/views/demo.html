@@ -1,0 +1,28 @@
+<div class="col-sm-offset-2 col-sm-8">
+
+  <h1>Coisas legais do Protactor!</h1>
+
+  <ul ng-repeat="fixture in fixtures ">
+    <li>{{ fixture.description }} | <button id="{{fixture.code}}" class="btn btn-danger" ng-click="removeFixture(fixture.id)">Remover</button></li>
+  </ul>
+
+  <h3>Adicionar nova coisa legal</h3>
+  <form class="form-horizontal form-tecnoset" name="protactorFixturesForm" ng-submit="addNewFixture(protactorFixturesForm.$valid)" novalidate  role="form">
+    <div class="row col-sm-12">
+
+      <div class="col-sm-offset-2 col-sm-6">
+        <input ng-model="newFixture" type="text" class="form-control" />
+      </div>
+
+    </div>
+
+    <div class="row col-sm-12">
+      <div class="col-sm-offset-2 col-sm-6">
+        <button id="btn-save" class="pull-right btn btn-success" type="submit"><i class="fa fa-check"></i> Salvar</button>
+      </div>
+    </div>
+
+  </form>
+
+
+</div>

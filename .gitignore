@@ -1,0 +1,14 @@
+*~
+*.swp
+.lvimrc
+npm-debug.log
+.DS_Store
+.tmp
+node_modules
+dist
+.sass-cache
+**/*.css
+bower_components
+snapshots
+tmp
+*.log
